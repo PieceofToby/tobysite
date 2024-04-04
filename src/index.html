@@ -1,22 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  {% include 'head', title:'My Homepage' %}
-  <body class="home">
-    {% include 'header' %}
-    <main id="main-content">
-      <h1>Home</h1>
-      <img
-        src="/assets/sample-img.jpg"
-        alt="A pizza"
-        style="max-width: 700px"
-      />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quo
-        amet voluptate quis doloremque harum. Omnis esse atque, mollitia
-        consequatur dolore dicta ratione, dignissimos sunt molestias earum
-        obcaecati! Accusantium, ipsam.
-      </p>
+
+{%include 'head',title:'home'%}
+<body>
+    <header>
+        <nav class='nav'>
+            <div>
+                <img src="https://cdn.oneesports.gg/cdn-data/2023/11/GenshinImpact_Furina_Focalors_HydroArchon_Wallpaper.jpg"
+                    alt="A beautifully drawn illustration of Furina in her pneuma arkhe state, holding one hand to her chest and holding the other one out in a very flamboyant manner."
+                    class="center big-img headimg">
+            </div>
+            <a href="#" class="lightblue_bg">Story</a>
+            <a href="#" class="blue_bg">Build Gameplay</a>
+            <a href="#" class="teal_bg">Builds Explained</a>
+            <a href="#" class="darkblue_bg">Relationships</a>
+        </nav>
+    </header>
+    <main>
+        <br>
+        <img src="https://64.media.tumblr.com/188e0e1fd03c20bf177e954cc71556b2/f3e5b3647e81be91-dd/s400x600/6c7025015f2efabfd43f42308f124a3e66025b37.pnj"
+            alt="One of Furina's ingame stickers where she looks upset, waving her hand as if dismissing you."
+            width="150" height="150">
+        <h2><strong>Who is Furina?</strong></h2>
+        <p>Furina de Fontaine is a playable Hydro character in Genshin Impact who can alternate between Pneuma and Ousia
+            alignments. Flamboyant and imprudent, Furina lives for the thrill of the courtroom, often speaking in a
+            manner peppered with bravado and drama. She is impatient and has a childlike temper, and she will
+            occasionally make judgments that she doesn't mean, which Neuvillette frequently has to control while
+            conducting a trial to avoid complications. While she enjoys being in the spotlight, she only does so when it
+            is focused at her positively, breaking down in complete shambles should something go out of plan and will
+            try to save face at the first possible opportunity.</p>
+        <img src="https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Fontaine.png/revision/latest?cb=20230819002539"
+            alt="an overview of Fontaine from the a mountain in the bordering country Sumeru." height="300px"
+            width="450" class="center">
+        <h2><strong>What is Fontaine?</strong></h2>
+        <p>Of the regions of Teyvat, Fontaine prides itself as the hub of culture and the arts. The newspaper The
+            Steambird is the main newspaper of the Court of Fontaine. According to the Steambird, Fontaine is located in
+            the center of Teyvat and is the source of all waters on the continent. Its entire continental plate is
+            elevated, making it significantly higher than other nations. At the edge of Fontaine is a massive waterfall
+            that stretches for thousands of meters.</p>
+        <br>
+        <h2><strong>So what is this site for, exactly?</strong></h2>
+        <p>This site is meant to be a hub for all information pertaining to Furina and her character! You can see her
+            lore, see how to build her ingame but actually explained well, and more!</p>
     </main>
-    {% include 'footer' %}
-  </body>
+    <footer>
+        <div class="footer">
+            <div class="bottomimage">
+                <img href="#top"
+                    src="https://64.media.tumblr.com/252492867ecfa6be3a76a8e13bb7ca83/786194295a67b642-c6/s400x600/ab83de02154a34dc689dfb34a46f8ab8a1bf5360.pnj"
+                    class="center"
+                    alt="An in-game sticker of Furina where she is pointing enthusiastically to the right using a rolled up manuscript."
+                    height="150" width="150">
+            </div>
+            <div class="textandsuch">
+                <a href="#top">Click here or on Furina to go back to the top!</a>
+                <p>Site brought to you by Furina's number one fan.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
 </html>
