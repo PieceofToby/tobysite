@@ -36,11 +36,27 @@
   align-items: stretch;
   width: 100%;
   height: var(--header-height);
-  position: fixed;
+  position: absolute;
   z-index: 10;
   top: 0;
   left: 0;
-  background: var(--menu-bg);
+
+  overflow: hidden; 
+  
+  background: url("https://static.wikia.nocookie.net/gensin-impact/images/f/fa/Namecard_Background_Furina_Banquet.png") no-repeat center center ;
+  background-size: cover;
+
+}
+.main-nav-container::after {
+  content: "";
+  background-color: #9ae9cf;
+  opacity: 0.5; /* Adjust the opacity as needed */
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index:-1;
 }
 /* this is img element that is the header logo */
 .header-logo {
@@ -57,7 +73,7 @@
 .nav-items-list {
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: sticky;
   top: var(--header-height);
   left: 0;
   width: 100%;
@@ -65,9 +81,9 @@
 
   height: calc(100vh - 130px);
   /* if you want the flyout nav to have a different background color, put it here */
-  background: var(--menu-bg);
+  /* background: var(--menu-bg); */
   transition: all 0.3s;
-  z-index: -10;
+  z-index: 50;
 }
 
 /* this is the class that is applied when the mobile nav disappears */
