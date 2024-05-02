@@ -54,11 +54,13 @@ nav {
     color: darkblue;
 }
 
-.footer {
+.footer div {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 2px;
   justify-content: center;
+  width: 100%;
+  background-color: #071F74;
 }
 
 .bottomimage {
