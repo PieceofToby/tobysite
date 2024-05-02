@@ -16,7 +16,7 @@ module.exports = function (eleventyConfig) {
 
   // Return your Object options:
   return {
-    ...p,
+
     dir: {
       input: "src",
       output: "docs",
