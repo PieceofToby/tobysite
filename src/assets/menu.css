@@ -3,7 +3,7 @@
   --header-height: 130px;
   /* this is the background color of the header bar and panel */
   --menu-bg: #9ae9cf;
-  --menu-highlight-hover: white;
+  --menu-highlight-hover: rgb(153, 211, 255);
 }
 
 * {
@@ -28,12 +28,16 @@
   opacity: 1;
   transition: opacity 0.2s;
 }
+.header-logo{
+  position:sticky;
+  display: flex;
+  height:100%;
+  width:auto;
+}
 /* this is the component that contains the top nav bar */
 .main-nav-container {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: stretch;
+
   width: 100%;
   height: var(--header-height);
   position: absolute;
@@ -49,8 +53,8 @@
 }
 .main-nav-container::after {
   content: "";
-  background-color: #9ae9cf;
-  opacity: 0.5; /* Adjust the opacity as needed */
+  background-color: #2973c6;
+  opacity: 0.5; 
   position: absolute;
   top: 0;
   left: 0;
@@ -58,14 +62,8 @@
   right: 0;
   z-index:-1;
 }
-/* this is img element that is the header logo */
-.header-logo {
-  padding: 1rem;
-}
-.header-logo-link {
-  display: flex;
-  align-items: center;
-}
+
+
 .header-logo-link:hover {
   background-color: var(--menu-highlight-hover);
   transition: background-color 0.3s;
@@ -73,18 +71,25 @@
 .nav-items-list {
   display: flex;
   flex-direction: column;
-  position: sticky;
+  position: fixed;
   top: var(--header-height);
   left: 0;
   width: 100%;
   /* set this to auto if you don't want the mobile nav to fill the screen */
 
-  height: calc(100vh - 130px);
+  height: auto;
   /* if you want the flyout nav to have a different background color, put it here */
-  /* background: var(--menu-bg); */
+
   transition: all 0.3s;
-  z-index: 50;
+  z-index: -1;
 }
+
+@media screen and (max-width: 640px){
+  .nav-items-list{
+    background:#2972c6a4;
+    z-index: 100;
+  }
+} 
 
 /* this is the class that is applied when the mobile nav disappears */
 .nav-items-list-hidden {
@@ -97,23 +102,28 @@
 /* this is the styling that is applied to the menu links on mobile */
 .nav-items-list a {
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 1px black;
+ 
   padding: 1rem;
-  text-align: center;
+
+  text-align: left;
   transition: background-color 0.3s;
 }
 .nav-items-list a:hover {
-  background-color: var(--menu-highlight-hover);
+  background-color: #0a66eedc;
   transition: background-color 0.3s;
 }
 /* this is the element that contains the hamburger button that positions it vertically within the header bar */
 .nav-button-right {
   height: var(--header-height);
   display: flex;
+  width:100%;
   align-items: center;
-  position: fixed;
+  position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
 }
 .sr-only {
   opacity: 0 !important;
@@ -133,7 +143,7 @@
   z-index: 1000;
 }
 .btn-toggle-menu:hover {
-  background-color: white;
+  background-color: rgb(128, 176, 244);
 }
 /* this makes sure the header doesn't cover any page content */
 main {

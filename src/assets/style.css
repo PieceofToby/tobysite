@@ -1,74 +1,98 @@
 /* your styles will go here!! */
-
+* {
+  font-family:'Orelega One';
+}
 html {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: medium;
-  }
+  font-family:'Orelega One', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: medium;
+}
+
+body {
+  background-color: aliceblue;
+  margin: 0;
   
-  body {
-    background-color: aliceblue;
-    margin: 0;
-  }
+}
 
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
 
-  h2 {
-    color:rgb(6, 22, 248);
-    text-align:center;
-    font-weight: 200;
-    padding: 15px;
-  }
+.title {
+  color: rgb(6, 22, 248);
+  text-align: center;
+  font-weight: 200;
+  padding: 15px;
+}
 
-  p {
-    color: rgb(32, 81, 155);
-    word-spacing: 0.10em;
-    line-height: 1.4;
-    max-width: 732px;
+.body-text {
+  color: rgb(32, 81, 155);
+  word-spacing: 0.10em;
+  line-height: 1.4;
+  max-width: 732px;
 
-  }
+}
 
-  .nav div {
-    max-height: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow-y: hidden;
-    margin-bottom: 20px;
-  }
+.nav div {
+  max-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: hidden;
+  margin-bottom: 20px;
+}
 
-  .big-img {
-    width: 100%;
-  }
+.big-img {
+  width: 100%;
+}
 
 
 
 nav {
-    text-align: center;
-    background-color: aliceblue;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: darkblue;
+  text-align: center;
+  background-color: aliceblue;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: darkblue;
 }
 
-.footer div {
+.footer {
+
   display: flex;
-  position: sticky;
-  align-items: center;
-  gap: 2px;
   justify-content: center;
-  width: 100%;
+  align-items: center;
   background-color: #071F74;
+  color: white;
+
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+
 }
+
 
 .bottomimage {
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5)) hue-rotate(360deg);
+  padding-top: 20px;
+  padding-bottom: 20px; 
+  padding-right: 20px;
   max-width: 100%;
   max-height: 100%;
 }
 
-.textandsuch {
-  font-size: medium;
+.to-the-top {
+
+  z-index: 100;
+  color: white;
+  padding: 10px;
+}
+.to-the-top p{
+  color: rgb(39, 93, 219);
+}
+
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 50px;
 }

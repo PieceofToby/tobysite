@@ -1,54 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  {%include 'head',title:'home'%}
-  <body>
-    {%include 'header',title:'home'%}
-    <main>
-      <br />
-      <img
-        src="https://64.media.tumblr.com/188e0e1fd03c20bf177e954cc71556b2/f3e5b3647e81be91-dd/s400x600/6c7025015f2efabfd43f42308f124a3e66025b37.pnj"
-        alt="One of Furina's ingame stickers where she looks upset, waving her hand as if dismissing you."
-        width="150"
-        height="150"
-      />
-      <h2><strong>W is Furina?</strong></h2>
-      <p>
-        Furina de Fontaine is a playable Hydro character in Genshin Impact who
-        can alternate between Pneuma and Ousia alignments. Flamboyant and
-        imprudent, Furina lives for the thrill of the courtroom, often speaking
-        in a manner peppered with bravado and drama. She is impatient and has a
-        childlike temper, and she will occasionally make judgments that she
-        doesn't mean, which Neuvillette frequently has to control while
-        conducting a trial to avoid complications. While she enjoys being in the
-        spotlight, she only does so when it is focused at her positively,
-        breaking down in complete shambles should something go out of plan and
-        will try to save face at the first possible opportunity.
-      </p>
-      <img
-        src="https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Fontaine.png"
-        alt="an overview of Fontaine from the a mountain in the bordering country Sumeru."
-        height="300px"
-        width="450"
-        class="center"
-      />
-      <h2><strong>What is Fontaine?</strong></h2>
-      <p>
-        Of the regions of Teyvat, Fontaine prides itself as the hub of culture
-        and the arts. The newspaper The Steambird is the main newspaper of the
-        Court of Fontaine. According to the Steambird, Fontaine is located in
-        the center of Teyvat and is the source of all waters on the continent.
-        Its entire continental plate is elevated, making it significantly higher
-        than other nations. At the edge of Fontaine is a massive waterfall that
-        stretches for thousands of meters.
-      </p>
-      <br />
-      <h2><strong>So what is this site for, exactly?</strong></h2>
-      <p>
-        This site is meant to be a hub for all information pertaining to Furina
-        and her character! You can see her lore, see how to build her ingame but
-        actually explained well, and more!
-      </p>
-    </main>
-  </body>
-  {% include 'footer' %}
+{%include 'head',title:'home'%}
+
+<body>
+  {%include 'header',title:'home'%}
+  <main>
+    <br />
+    <img
+      src="https://64.media.tumblr.com/188e0e1fd03c20bf177e954cc71556b2/f3e5b3647e81be91-dd/s400x600/6c7025015f2efabfd43f42308f124a3e66025b37.pnj"
+      alt="One of Furina's ingame stickers where she looks upset, waving her hand as if dismissing you." width="150"
+      height="150" />
+    <h2 class="title"><strong>Who is Furina?</strong></h2>
+    <p class="body-text">
+      Furina de Fontaine is a playable Hydro character in Genshin Impact who
+      can alternate between Pneuma and Ousia alignments. Flamboyant and
+      imprudent, Furina lives for the thrill of the courtroom, often speaking
+      in a manner peppered with bravado and drama. She is impatient and has a
+      childlike temper, and she will occasionally make judgments that she
+      doesn't mean, which Neuvillette frequently has to control while
+      conducting a trial to avoid complications. While she enjoys being in the
+      spotlight, she only does so when it is focused at her positively,
+      breaking down in complete shambles should something go out of plan and
+      will try to save face at the first possible opportunity.
+    </p>
+    <img src="https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Fontaine.png"
+      alt="an overview of Fontaine from the a mountain in the bordering country Sumeru." height="300px" width="450"
+      class="center" />
+    <h2 class="title"><strong>What is Fontaine?</strong></h2>
+    <p class="body-text">
+      Of the regions of Teyvat, Fontaine prides itself as the hub of culture
+      and the arts. The newspaper The Steambird is the main newspaper of the
+      Court of Fontaine. According to the Steambird, Fontaine is located in
+      the center of Teyvat and is the source of all waters on the continent.
+      Its entire continental plate is elevated, making it significantly higher
+      than other nations. At the edge of Fontaine is a massive waterfall that
+      stretches for thousands of meters.
+    </p>
+    <br />
+    <div class="container" style="padding-left: 70px; padding-right: 70px;">
+      <div style="flex: 2;">
+        <h2 class="title" ><strong>So what is this site for, exactly?</strong></h2>
+        <p class="body-text">
+          This site is meant to be a hub for all information pertaining to Furina
+          and her character! You can see her lore, see how to build her ingame but
+          actually explained well, and more!
+        </p>
+      </div>
+
+
+
+    
+        {%include 'topthing', flex:'0' %}
+      
+
+
+    </div>
+  </main>
+
+</body>
+{% include 'footer' %}
+
 </html>
