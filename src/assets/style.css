@@ -96,3 +96,17 @@ nav {
   flex-direction: row-reverse;
   gap: 50px;
 }
+
+.rectangle {
+  max-width: 90%;
+  max-height: 2%;
+  background-color: #68ABE9;
+  padding: 1%;
+  text-align: center;
+  color: #135DA1;
+}
+
+.bannertext {
+  color: #135DA1;
+  font-style: normal;
+}
