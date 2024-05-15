@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  {% include 'head', title:'Page 2' %}
+  {% include 'head', title:'Page 3' %}
   <body class="page">
     {% include 'header' %}
     <main id="main-content">
-      <h1 class="title">Build Gameplay</h1>
+      <h1 class="title">Builds + Gameplay</h1>
 
-      <p class="body-text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quo
-        amet voluptate quis doloremque harum. Omnis esse atque, mollitia
-        consequatur dolore dicta ratione, dignissimos sunt molestias earum
-        obcaecati! Accusantium, ipsam.
-      </p>
+      <div class="rectangle"style="width: 40%">
+        <h2 class="bannertext" >Furina's Talents</h2>
+      </div>
+
+      <div class="container" style="padding-top: 2%">
+         <p class="body-text" style="color: #0B6DE0; width: 35%;">
+            Soloist's Solicitation
+            Normal Attack
+            Left Mouse Click
+         </p>
+        <img
+         src="https://s3-alpha-sig.figma.com/img/b613/16be/f617fe8cbc2c7c23c0a44c5609beb1fb?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Dv2HS~HWGg196TLe7MmkH0i0Imb3-GlcQpwsleuG1dktsGEPQTrXB5yKYj1htgCrEdn31AauaWVItZA3ja7yDUbwddWrm~h~oQ~HmHEpIbOHCClOR6aWCG~R74WzaNrnAbZ4bjYOJBmZZV4HsSnmMkfCzE8-ca83BuMX9qwISDKAbKCR7IhF-0U-q3AHZdPQcxW2GdAgk-U~G~ox9x6yL1qNgSrXKToyAYCG5EXA~nZkllvIZcG2d4r4ve8UVGNqiOA0PusRem8d9z75kx~lm8gLWD9QqRvocnPsyZ5r~D9aMeCPH1PlFe1WMrcZuaqlMEhFIh7By63lseFSWR5wZA__"
+         alt="An icon of two swords clashed together within a blue circle" width="90"
+         height="90" />
+     </div>
+
+
+
+
       {%include 'topthing'%}
     </main>
     {% include 'footer' %}
