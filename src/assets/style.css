@@ -106,6 +106,18 @@ nav {
   align-items: center;
 }
 
+.bigpapacontainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.container-weapon {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+  padding-inline-end: 5%;
+}
+
 .body-text-build {
   color: rgb(32, 81, 155);
   word-spacing: 0.10em;
@@ -124,6 +136,7 @@ nav {
   padding: 1%;
   text-align: center;
   color: #135DA1;
+  width: 40%;
 }
 
 .bannertext {
