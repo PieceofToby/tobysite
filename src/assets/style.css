@@ -115,7 +115,7 @@ nav {
   display: flex;
   flex-flow: column;
   gap: 10px;
-  padding-inline-end: 5%;
+  padding-inline-start: 7%;
 }
 
 .body-text-build {
