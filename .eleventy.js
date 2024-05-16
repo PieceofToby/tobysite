@@ -8,7 +8,7 @@ module.exports = function (eleventyConfig) {
     console.log("running in production");
     eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
     // this should be set
-    p = { pathPrefix: urlBase };
+    p = { pathPrefix: "https://pieceoftoby.github.io/tobysite" };
   }
 
   eleventyConfig.addPassthroughCopy("src/assets");
