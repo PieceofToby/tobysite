@@ -1,5 +1,6 @@
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 const urlBase = process.env.BASE_URL || "";
+console.log("urlBase = " + urlBase);
 
 module.exports = function (eleventyConfig) {
   console.log(process.env.NODE_ENV);
@@ -8,7 +9,7 @@ module.exports = function (eleventyConfig) {
     console.log("running in production");
     eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
     // this should be set
-    p = { pathPrefix: "https://pieceoftoby.github.io/tobysite" };
+    p = { pathPrefix: "/" + urlBase + "/" };
   }
 
   eleventyConfig.addPassthroughCopy("src/assets");
@@ -16,7 +17,7 @@ module.exports = function (eleventyConfig) {
 
   // Return your Object options:
   return {
-
+    ...p,
     dir: {
       input: "src",
       output: "docs",
